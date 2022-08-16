@@ -1,0 +1,112 @@
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #6c7289;
+}
+
+.card {
+  display: grid;
+  margin: auto;
+  margin-top: 50px;
+  grid-auto-flow: column;
+  background-color: hsl(0, 0%, 100%);
+  width: 600px;
+  height: 450px;
+  border-radius: 8px;
+}
+
+h1 {
+  font-family: "Fraunces";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: #1c232b;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 5px;
+  color: hsl(228, 12%, 48%);
+}
+
+.price {
+  font-family: "Fraunces";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: #3d8168;
+}
+
+.price_old {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 23px;
+  text-decoration-line: line-through;
+  color: #6c7289;
+  vertical-align: middle;
+}
+
+.bucket {
+  border: none;
+  background: #3d8168;
+  border-radius: 8px;
+  padding: 15px 62px;
+  cursor: pointer;
+  /* text decoration */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.bucket:hover {
+  background-color: #2b624e;
+  transition: 0.3s;
+}
+
+.card_description {
+  padding: 32px;
+}
+
+svg {
+  margin-right: 10px;
+}
+
+.card_img img {
+  border-radius: 10px 0 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(158, 36%, 37%);
+}
+
+.attribution {
+  margin-top: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 420px) {
+  .card {
+    grid-auto-flow: row;
+    max-width: 90%;
+    height: auto;
+  }
+  .card_img img {
+    max-height: 240px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .attribution {
+    bottom: 0px;
+  }
+  .card_img img {
+    border-radius: 10px 10px 0 0;
+  }
+}
